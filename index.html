@@ -388,7 +388,7 @@
             }
             
             const { customerName, customerWA, code } = currentTransaction;
-            const message = `Halo ${customerName},\n\nBerikut kode verifikasi pembayaran Anda:\n\nKode: *${code}*\n\nFormat kode:\n- 6 karakter\n- Karakter ke-4 harus X\n\nSilakan masukkan kode ini di aplikasi Fhotoboth untuk verifikasi pembayaran cash.\n\nTerima kasih.`;
+            const message = `Halo ${customerName},\n\nBerikut kode verifikasi pembayaran Anda:\n\nKode: *${code}*\n\nFormat kode:\n- 6 karakter\n\n\nSilakan masukkan kode ini di aplikasi Fhotoboth untuk verifikasi pembayaran cash.\n\nTerima kasih.`;
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/${customerWA}?text=${encodedMessage}`;
             
